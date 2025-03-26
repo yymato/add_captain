@@ -29,7 +29,6 @@ def main():
     user.address = 'module_2'
     user.age = 31
     user.email = 'aolsdfj@mars.org'
-    db_sess = db_session.create_session()
     db_sess.add(user)
     db_sess.commit()
 
@@ -41,7 +40,6 @@ def main():
     user.speciality = 'engineer'
     user.address = 'module_3'
     user.email = 'slfkgdjlskdjf@mars.org'
-    db_sess = db_session.create_session()
     db_sess.add(user)
     db_sess.commit()
 
@@ -51,8 +49,7 @@ def main():
     job.job = 'deployment of residential modules 1 and 2'
     job.work_size = 15
     job.collaborators = '2, 3'
-    db_sess = db_session.create_session()
-    db_sess.add(user)
+    db_sess.add(job)
     db_sess.commit()
     app.run()
 
